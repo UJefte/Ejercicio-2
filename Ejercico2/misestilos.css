@@ -1,0 +1,56 @@
+body {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+div {
+    font-size: 20px;
+}
+
+
+#personajes {
+    background: linear-gradient(to right, #8a2be2, #d8bfd8); 
+    color: black;
+    font-family: 'Georgia', serif; 
+    text-align: justify; 
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+
+#Listadepersonajes {
+    background: linear-gradient(to right, #f0ff99, #b3ffab); 
+    color: black;
+    font-family: 'Verdana', sans-serif;
+    text-align: left; 
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+#Listadepersonajes img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+    font-size: 1.2rem
+}
+
+#Caracteristicas {
+    background: linear-gradient(to right, #fe78ea, #ffafbd); 
+    color: black;
+    font-family: 'Courier New', monospace; 
+    text-align: left; 
+    padding: 20px;
+    border-radius: 10px; 
+    font-size: 0.9rem
+}
+
+#Caracteristicas img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+}
+
