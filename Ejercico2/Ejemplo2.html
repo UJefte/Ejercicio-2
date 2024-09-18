@@ -1,84 +1,97 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="misestilos.css">
+    <link rel="stylesheet" href="misestilos.css">
     <title>Personajes de Videojuego</title>
+    <style>
+        /* Estilos para la lista horizontal */
+        .menu {
+            list-style-type: none; /* Quita las viñetas */
+            display: flex; /* Muestra los elementos en fila */
+            justify-content: space-around; /* Distribuye los recuadros */
+            padding: 0; /* Quita el padding predeterminado */
+            background-color: #f0f0f0; /* Fondo claro para la barra */
+        }
+
+        .menu li {
+            padding: 15px; /* Espacio dentro de cada recuadro */
+            border: 1px solid #ccc; /* Borde alrededor de cada recuadro */
+            background-color: #e7e7e7; /* Fondo de cada recuadro */
+            text-align: center; /* Centra el texto */
+            width: 150px; /* Ancho fijo para los recuadros */
+        }
+
+        .menu li:hover {
+            background-color: #ddd; /* Cambia el fondo al pasar el mouse */
+        }
+    </style>
 </head>
 <body>
-	<div id="personajes">
-		<h1>Personajes de Overwatch</h1>
-		<h2>Descripción de los Personajes</h2>
-		<p><strong>Sombra:</strong> Sombra es una hacker mexicana conocida por su sigilo y habilidades de hackeo. Puede infiltrarse en sistemas enemigos, volverse invisible y desactivar habilidades de sus oponentes, lo que la convierte en una espía formidable en el campo de batalla.</p>
-		<p><strong>Mercy:</strong> Mercy es una sanadora suiza y uno de los personajes de apoyo más conocidos. Con su bastón de Caduceo, puede sanar o potenciar a sus aliados. Mercy es un símbolo de esperanza y compasión en Overwatch, dedicada a salvar vidas.</p>
-		<p><strong>Ana:</strong> Ana es una francotiradora egipcia que juega el rol de apoyo. Utiliza su rifle biótico para sanar a sus aliados desde la distancia o dañar a sus enemigos. Como una de las fundadoras de Overwatch, Ana es una veterana experta con un gran sentido del deber.</p>
-		<p><strong>Ramattra:</strong> Ramattra es un monje ómnico y el líder de Null Sector. Originalmente pacifista, ha cambiado sus creencias y ahora lucha para liberar a los ómnicos de la opresión humana. Es un personaje que mezcla ideales pacíficos con una peligrosa disposición a la guerra.</p>
-		<p><strong>D.Va:</strong> D.Va es una exjugadora profesional de Corea del Sur que pilota un meca para proteger a su país de amenazas ómnicas. Con habilidades defensivas y ofensivas, D.Va es un personaje versátil que puede tanto absorber daño como atacar con gran efectividad.</p>
-	</div>
-	<div id="Listadepersonajes">
-		<ol>
-			<li>Sombra</li>
-			<li>Mercy</li>
-			<li>Ana</li>
-			<li>Ramattra</li>
-			<li>D.Va</li>
-		</ol>
-	
-		<img src="C:\Users\ISABEL RIVERA\OneDrive\Escritorio\Ejercico2\imagen\mercy.jpg" alt="Imagen del personaje 1" width="300">
-		<img src="C:\Users\ISABEL RIVERA\OneDrive\Escritorio\Ejercico2\imagen\sombra.jpg" alt="Imagen del personaje 2" width="300">
-		<img src="C:\Users\ISABEL RIVERA\OneDrive\Escritorio\Ejercico2\imagen\dva.jpg" alt="Imagen del personaje 2" width="300">
-	</div>
-	<div id="Caracteristicas">
-		<table>
-			<thead>
-				<tr>
-					<th>Nombre</th>
-					<th>Edad</th>
-					<th>habilidade</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<p><strong>Nombre: </strong><em>Sombra</em></p>
-					</td>
-					<td><strong>Edad:</strong><em>31</em></td>
-					<td>
-						<p>Su habilidad consiste en hackear a los enemigos</p>
-						<p>Tiene un arma que hace un daño medio</p>
-						<img src="C:\Users\ISABEL RIVERA\OneDrive\Escritorio\Ejercico2\imagen\sombra.jpg" width="200">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p><strong>Nombre: </strong><em>Mercy</em></p>
-					</td>
-					<td><strong>Edad:</strong><em>39</em></td>
-					<td>
-						<p>Su habilidad consiste en sanar o potenciar a sus aliados</p>
-						<p>Tiene un arma que es en terminos de daño, un arma de agua</p>
-						<img src="C:\Users\ISABEL RIVERA\OneDrive\Escritorio\Ejercico2\imagen\mercy.jpg" width="200">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p><strong>Nombre: </strong><em>D.va</em></p>
-					</td>
-					<td><strong>Edad:</strong><em>19</em></td>
-					<td>
-						<p>Su habilidad consiste en proteger a sus aliados con su matriz</p>
-						<p>Tiene un disparo primario que hace mucho daño de cercas</p>
-						<img src="C:\Users\ISABEL RIVERA\OneDrive\Escritorio\Ejercico2\imagen\dva.jpg" width="200">
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<a href="https://overwatch.blizzard.com/es-es/heroes/" target="_blank"><img src="C:\Users\ISABEL RIVERA\OneDrive\Escritorio\Ejercico2\imagen\dva.jpg" alt="Foto de d.va" width="200"></a>
-	</div>
-	
+    <!-- Lista desordenada horizontal en la parte superior -->
+    <ul class="menu">
+        <li>Historia</li>
+        <li>Poderes</li>
+        <li>Rol</li>
+    </ul>
+
+    <div id="personajes">
+        <h1>Personajes de Overwatch</h1>
+        <h2>Descripción de los Personajes</h2>
+        <p><strong>Sombra:</strong> Sombra es una hacker mexicana conocida por su sigilo y habilidades de hackeo...</p>
+        <p><strong>Mercy:</strong> Mercy es una sanadora suiza y uno de los personajes de apoyo más conocidos...</p>
+        <p><strong>Ana:</strong> Ana es una francotiradora egipcia que juega el rol de apoyo...</p>
+        <p><strong>Ramattra:</strong> Ramattra es un monje ómnico y el líder de Null Sector...</p>
+        <p><strong>D.Va:</strong> D.Va es una exjugadora profesional de Corea del Sur que pilota un meca...</p>
+    </div>
+
+    <div id="Listadepersonajes">
+        <ol>
+            <li>Sombra</li>
+            <li>Mercy</li>
+            <li>Ana</li>
+            <li>Ramattra</li>
+            <li>D.Va</li>
+        </ol>
+
+        <img src="C:\Proyectos HTML\Ejercicio2- css\imagen\mercy.jpg" alt="Imagen del personaje 1" width="300">
+        <img src="C:\Proyectos HTML\Ejercicio2- css\imagen\sombra.jpg" alt="Imagen del personaje 2" width="300">
+        <img src="C:\Proyectos HTML\Ejercicio2- css\imagen\dva.jpg" alt="Imagen del personaje 3" width="300">
+    </div>
+
+    <div id="Caracteristicas">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>habilidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p><strong>Nombre: </strong><em>Sombra</em></p></td>
+                    <td><strong>Edad:</strong><em>31</em></td>
+                    <td><p>Su habilidad consiste en hackear a los enemigos...</p><img src="C:\Proyectos HTML\Ejercicio2- css\imagen\sombra.jpg" width="200"></td>
+                </tr>
+                <tr>
+                    <td><p><strong>Nombre: </strong><em>Mercy</em></p></td>
+                    <td><strong>Edad:</strong><em>39</em></td>
+                    <td><p>Su habilidad consiste en sanar o potenciar a sus aliados...</p><img src="C:\Proyectos HTML\Ejercicio2- css\imagen\mercy.jpg" width="200"></td>
+                </tr>
+                <tr>
+                    <td><p><strong>Nombre: </strong><em>D.va</em></p></td>
+                    <td><strong>Edad:</strong><em>19</em></td>
+                    <td><p>Su habilidad consiste en proteger a sus aliados...</p><img src="C:\Proyectos HTML\Ejercicio2- css\imagen\dva.jpg" width="200"></td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="https://overwatch.blizzard.com/es-es/heroes/" target="_blank"><img src="C:\Proyectos HTML\Ejercicio2- css\imagen\dva.jpg" alt="Foto de d.va" width="200"></a>
+    </div>
 </body>
 </html>
+
 
 
