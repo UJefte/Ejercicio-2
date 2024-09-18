@@ -54,3 +54,39 @@ div {
     margin-top: 20px; 
 }
 
+/* Estilos para la lista horizontal del menú */
+.menu {
+    list-style-type: none; /* Quita las viñetas */
+    display: flex; /* Muestra los elementos en fila */
+    justify-content: center; /* Centra los recuadros en la página */
+    padding: 0; /* Quita el padding predeterminado */
+    margin: 0; /* Quita el margen predeterminado */
+    background-color: #f0f0f0; /* Fondo claro para la barra */
+    border-bottom: 2px solid #ccc; /* Borde inferior para separar del contenido */
+}
+
+.menu li {
+    padding: 15px 25px; /* Espacio dentro de cada recuadro */
+    border: 2px solid #ddd; /* Borde gris claro alrededor de cada recuadro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #e7e7e7; /* Fondo de cada recuadro */
+    text-align: center; /* Centra el texto */
+    width: 120px; /* Ancho fijo para los recuadros */
+    margin: 0 5px; /* Espacio entre los recuadros */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    font-family: 'Arial', sans-serif; /* Fuente sans-serif */
+}
+
+.menu li:hover {
+    background-color: #ddd; /* Cambia el fondo al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.menu li.active {
+    background-color: #bbb; /* Fondo para el elemento activo o seleccionado */
+    font-weight: bold; /* Texto en negrita para el elemento activo */
+}
+
